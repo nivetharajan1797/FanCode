@@ -9,17 +9,17 @@ public class UserEndPoints extends Routes{
 	public static Response getUser()
 	{
 		Response response = given()
-				.contentType(ContentType.JSON)
-                .when()
-                .get(base_url+"/users");
+				   .contentType(ContentType.JSON)
+                		   .when()
+                		   .get(base_url+"/users");
 		return response;				
 	}
 	public static Response getTodos(int userId)
 	{
 		Response response = given()
 				.contentType(ContentType.JSON)
-                .when()
-                .get(base_url+"/todos?userId=" + userId);
+                		.when()
+                		.get(base_url+"/todos?userId=" + userId);
 		return response;
 		
 	}
