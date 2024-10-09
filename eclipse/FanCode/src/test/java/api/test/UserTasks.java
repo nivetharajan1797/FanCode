@@ -38,7 +38,7 @@ public class UserTasks {
             if (completionPercentage > 50) {
                 System.out.println("User ID: " + userId + " has more than 50% tasks completed!");
             } else {
-                System.out.println("User ID: " + userId + " has less than 50% tasks completed!");
+                // System.out.println("User ID: " + userId + " has less than 50% tasks completed!");
             }
 //            // Assert that completed tasks percentage is greater than 50%
 //            Assert.assertTrue(completionPercentage > 50, "User " + userId + " has less than 50% tasks completed!");
