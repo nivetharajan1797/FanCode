@@ -40,11 +40,11 @@ public class ApiUtils {
 
         Response response = UserEndPoints.getTodos(userId);
         response.then().statusCode(200);
-        if (response.statusCode() == 404) {
-            logger.error("User not found or todos not available for userId: " + userId);
-        } else {
-            response.then().statusCode(200); // Continue with the expected logic
-        }
+        // if (response.statusCode() == 404) {
+        //     logger.error("User not found or todos not available for userId: " + userId);
+        // } else {
+        //     response.then().statusCode(200); // Continue with the expected logic
+        // }
         return response.jsonPath().getList("completed", Boolean.class);
     }
 
